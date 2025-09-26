@@ -15,7 +15,7 @@ export default function Login() {
     setSuccess("");
 
     try {
-      const res = await fetch("http://localhost:8081/api/auth/login", {
+      const res = await fetch("http://localhost:9192/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }), // ✅ backend expects email + password
