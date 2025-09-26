@@ -1,0 +1,107 @@
+.tip-detail-container {
+  padding: 30px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.cards-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 420px;
+  padding: 25px 20px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Default Headings */
+.steps-card h2 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.precautions-card h2 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+/* Themed Colors */
+.feed .steps-card h2,
+.feed .card li::before {
+  color: #008080; /* Teal */
+}
+
+.feed .precautions-card h2,
+.feed .precautions-card li::before {
+  color: #d97706; /* Amber */
+}
+
+.exercise .steps-card h2,
+.exercise .card li::before {
+  color: #2563eb; /* Blue */
+}
+
+.exercise .precautions-card h2,
+.exercise .precautions-card li::before {
+  color: #dc2626; /* Red */
+}
+
+.vet .steps-card h2,
+.vet .card li::before {
+  color: #16a34a; /* Green */
+}
+
+.vet .precautions-card h2,
+.vet .precautions-card li::before {
+  color: #9333ea; /* Purple */
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  padding-left: 25px;
+  position: relative;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

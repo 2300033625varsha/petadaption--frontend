@@ -1,0 +1,136 @@
+/* Container */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #006eff, #17567a);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card */
+.register-card {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Left */
+.register-left {
+  background: linear-gradient(to bottom, #ff6600, #ff9900);
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-left h2 {
+  margin-bottom: 20px;
+}
+
+.register-left p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  background: #fff;
+  color: #ff6600;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.about-box {
+  margin-top: 20px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-size: 13px;
+  text-align: left;
+}
+
+/* Right */
+.register-right {
+  flex: 1;
+  padding: 40px;
+}
+
+.register-right h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Error */
+.error-msg {
+  background: #ffe5e5;
+  color: #d93025;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  border: 1px solid #f5c2c2;
+  text-align: center;
+}
+
+/* Inputs */
+.register-right input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.register-right input:focus {
+  border-color: #006eff;
+  box-shadow: 0 0 5px rgba(0, 110, 255, 0.4);
+}
+
+/* Button */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6a11cb, #ff6a00);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .register-card {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .register-left {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .register-right {
+    padding: 30px;
+  }
+}
